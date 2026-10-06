@@ -16,7 +16,7 @@ clock = pygame.time.Clock()
 async def main():
     MISSILE_SPEED = 7
 
-    font = pygame.font.SysFont(None, 36)
+    font = pygame.font.Font(None, 36)
 
     running = True
 
@@ -254,7 +254,7 @@ async def main():
 
         pygame.display.flip()
         clock.tick(60)
-        asyncio.sleep(0)
+        await asyncio.sleep(0)
 
     pygame.quit()
     sys.exit()
